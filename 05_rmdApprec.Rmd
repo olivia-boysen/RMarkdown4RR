@@ -1,0 +1,46 @@
+---
+title: "RMarkdown Appreciation"
+author: "Tatjana Kecojevic"
+date: "12-Nov-2019"
+output: 
+  beamer_presentation: 
+    slide_level: 2
+  powerpoint_presentation: default
+  revealjs::revealjs_presentation: default
+params:
+  palette: roma
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r packages, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(DT)
+library(here)
+```
+
+```{r, include = FALSE}
+source(here::here("R/script2.R"))
+```
+
+```{r}
+# insert figure 1 here
+# make in text reference link
+```
+
+# Background
+
+## Table 1
+
+```{r}
+exyu
+```
+
+## Graph 1
+
+```{r demo, fig.asp=.8, fig.width=10, fig.cap="The caption."}
+my_plot
+```

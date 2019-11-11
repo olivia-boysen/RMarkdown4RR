@@ -1,0 +1,102 @@
+---
+title: 'RMarkdown Appreciation'
+date: '12-Nov-2019'
+author:
+- affiliation: Sister Analyst
+  name: Tatjana Kecojevic
+output: 
+  html_document:
+    theme: "flatly"
+    toc: true
+    toc_float: true
+    code_download: true
+    df_print: kable
+params:
+  data: "data/exyu_olympic.csv"
+---  
+
+This document provides answers for the `rmarkdown` appreciation study as of `r rmarkdown::metadata$date`. It will include both: the rcode and its output.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r include=FALSE}
+library(here) # for file paths
+library(tidyverse) # for all else
+theme_set(theme_minimal())
+```
+
+
+```{r include=FALSE}
+exyu <- read.csv(here(params$data))
+```
+
+Let us have a look at data using `glimpse()` function.
+```{r}
+glimpse(exyu)
+```
+
+## Task 1
+
+**Find the number of medals per each team?** 
+
+```{r}
+exyu %>% 
+  filter(!is.na(Medal)) %>% 
+  group_by(Team, Medal) %>% 
+  summarize(cases=n()) %>% 
+  DT::datatable()
+```
+
+## Task 2
+
+**Find the number of medals per each team for the last Rio games?**
+
+```{r}
+exyu %>% 
+  filter(!is.na(Medal) & Year == 2016) %>% 
+  group_by(Team, Medal) %>% 
+  summarize(cases=n()) %>% 
+  DT::datatable()
+```
+
+## Task 3
+
+**Visualise data about number of female and male athletes from ex YU countries available in the data set:**
+
+1) identify data to be poloted
+
+2) visualise data
+
+### 1: Identify data
+
+```{r}
+exyu_mf <- exyu %>% 
+  group_by(Team, Sex) %>% 
+  summarize(total = n()) #<< 
+exyu_mf
+```
+
+### 2: How do we plot this? 
+
+We need a bar chart with each team on the x axis and a number of male and female athlethes on the y axis.
+
+```{r}
+ggplot(data = exyu_mf, aes(x = Team, y = total, fill = Sex)) +
+  geom_bar(stat="identity",  position="dodge", col = "black") +
+  # to make it read easier flip x & y coordinates
+  coord_flip() +
+  # add description for x and y axies and title and subtitle  
+  labs(x="ex YU country", y="No of athletes", 
+       title = "Comparisons of M and F representatives in exYU Teams",
+       subtitle = "for klikR workshop",
+       caption = "Data from: kaggle - 120 years of Olympic history") +
+  # add the border on the graph  
+  theme(panel.border = element_rect(fill = NA, colour = "black", size = 1)) +
+  # remove the grid lines
+  theme(plot.title = element_text(size = 14, vjust = 2),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        axis.line = element_blank())
+```

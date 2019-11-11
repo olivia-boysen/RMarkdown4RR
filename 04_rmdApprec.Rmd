@@ -1,0 +1,126 @@
+---
+title: "RMarkdown Appreciation"
+author:
+ - name: "Tatjana Kecojevic, Ph.D."
+   affiliation: "1"
+ - name: "Balsa Delibasic, MD, Ph.D."
+   affiliation: "2"
+ - name: "Srdjan Prodanovic, Ph.D"
+   affiliation: "3"
+address:
+ - code: "1"
+   address: Sister Analysis, Belgrade, Serbia
+ - code: "2"
+   address: Institute of Philosophy, Department, Street, City, Country
+ - code: "3"
+   address: Yet Another University, Department, Street, City, Country
+#bibliography: sample.bib
+params:
+  palette: 
+    label: "scico palette:"
+    value: roma
+    input: select
+    choices: [berlin, roma, cork, grayC]
+output: 
+  bookdown::word_document2: default
+  bookdown::html_document2: default
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  echo = FALSE,
+  comment = "#>",
+  fig.retina = 3,
+  fig.path = here::here("images/")
+)
+surv_cols <- scico::scico(3, begin = .3, end = 1, palette = params$palette)
+```
+
+```{r, include = FALSE}
+source(here::here("R/script1.R"))
+```
+
+# Title Page
+
+Title:  RMarkdown Appreciation
+
+
+Authors: Author One1, Author Two2, Author Three3
+
+Affiliations: 	1. Sister Analysis
+2. University of Belgrade, IFDT
+3. University of Belgrade, IFDT
+
+Corresponding Author:
+Author One,
+Sister Analyst
+11080, Zemun
+Serbia
+
+Tel: 555-555-5555
+Fax: 555-555-7890
+Email: author_one@sisteranalyst.org
+
+Running Title: Mock Publication
+Word Count: 1000
+
+# Abstract
+
+Assessing the accuracy of the given quantile parametric re-
+gression function estimate requires valid and reliable procedures for es-
+timating the asymptotic variance-covariance matrix of the estimated pa-
+rameters. This covariance matrix depends on the reciprocal of the density
+function of the error (sparsity function) evaluated at the quantile of in-
+terest which, particularly for heteroscedastic non-iid cases, results in a
+complex and dificult estimation problem. It is well-known that the con-
+struction of confidence intervals based on the quantile regression estimator
+can be simplified by using a bootstrap. To construct confidence intervals
+in quantile regression we propose an effective and easy to apply bootstrap
+method based on the idea of Silverman's kernel smoothing approach. This
+proposed bootstrapping method requires the estimation of the conditional
+variance function of the fitted quantile. In this paper we will discuss a
+variety of approaches to estimate the conditional variance function. These
+will include the adaptation of GLMs as well as non-parametric regression
+based estimation. These diferent approaches have been assessed under
+various data structures simulated in R and compared to several exist-
+ing methods computable in the quantreg package contributed by Roger
+Koenker. This methodology is also applicable to a wider class of regression
+models with heteroscedastic errors where the transformation to normality
+is difcult to achieve or maybe undesirable given a need to preserve the
+original data scale.
+
+METHODS
+Explain the methodology
+
+RESULTS
+Describe the results
+
+CONCLUSIONS
+Provide a conclusion
+
+# Introduction
+
+Here is the text of your introduction.
+
+# Section 1
+
+Some introduction
+
+## Section 1.1
+
+Some analysis
+
+# Section 2
+
+Some discussion
+
+# Conslucion
+
+What we've learnt
+
+# Citations
+
+Blabla \cite{Lannes} blabla. Blabla \cite{HJ2} blabla. Blabla \cite{BF, Lannes} blabla. Blabla \cite{Benjamin1967, HJ2, HJ3, HP2} blabla.
