@@ -7,16 +7,16 @@ author:
     url: https://tanjakec.github.io
     affiliation: Sister Analyst
     affiliation_url: http://sisteranalyst.org/
-  - name: "Balsa Delibasic, Ph.D."  
-    url: http://www.instifdt.bg.ac.rs/researcher/balsa-delibasic/
-    affiliation: Intitute of Philosophy and Social Theory
-    affiliation_url: http://www.instifdt.bg.ac.rs/en/
-  - name: "Srdjan Prodanovic, Ph.D."  
-    url: http://www.instifdt.bg.ac.rs/researcher/srdan-prodanovic/
-    affiliation: Intitute of Philosophy and Social Theory
-    affiliation_url: http://www.instifdt.bg.ac.rs/en/
+  - name: "Jelena Sapic, MA"  
+    url: http://www.bos.rs/sb/kontakt
+    affiliation: Belgrade Open School
+    affiliation_url: http://www.bos.rs/sb-eng/
+  - name: "Brian Cox, Ph.D."  
+    url: https://www.physics.manchester.ac.uk/research/impact/the-brian-cox-effect/
+    affiliation: School of Physics and Astronomy
+    affiliation_url: https://www.manchester.ac.uk/
 creative_commons: CC BY
-date: "2019-11-12"
+date: "2020-01-30"
 output:   
   distill::distill_article:
     toc: true

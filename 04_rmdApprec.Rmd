@@ -3,17 +3,17 @@ title: "RMarkdown Appreciation"
 author:
  - name: "Tatjana Kecojevic, Ph.D."
    affiliation: "1"
- - name: "Balsa Delibasic, MD, Ph.D."
+ - name: "Jelena Sapic, MA"
    affiliation: "2"
- - name: "Srdjan Prodanovic, Ph.D"
+ - name: "Brian Cox, Ph.D."
    affiliation: "3"
 address:
  - code: "1"
    address: Sister Analysis, Belgrade, Serbia
  - code: "2"
-   address: Institute of Philosophy, Department, Street, City, Country
+   address: Belgrade Open School, Masarikova 5, Belgrade, Serbia
  - code: "3"
-   address: Yet Another University, Department, Street, City, Country
+   address: University of Manchester, School of Physics and Astronomy, Oxford Road, Manchester, M13 9PL UK
 #bibliography: sample.bib
 params:
   palette: 

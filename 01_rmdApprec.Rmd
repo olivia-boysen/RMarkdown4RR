@@ -1,6 +1,6 @@
 ---
 title: 'RMarkdown Appreciation'
-date: '12-Nov-2019'
+date: '30-Jan-2020'
 author:
 - affiliation: Sister Analyst
   name: Tatjana Kecojevic
