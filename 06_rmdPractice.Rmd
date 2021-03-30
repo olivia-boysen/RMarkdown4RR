@@ -1,14 +1,8 @@
 ---
 title: "RMarkdown Appreciation"
 author: "Tatjana Kecojevic"
-date: "30-Jan-2020"
-output: 
-  beamer_presentation: 
-    slide_level: 2
-  powerpoint_presentation: default
-  revealjs::revealjs_presentation: default
-params:
-  palette: roma
+date: "`r Sys.Date()`"
+output: slidy_presentation
 ---
 
 ```{r setup, include=FALSE}
@@ -33,14 +27,16 @@ source(here::here("R/script2.R"))
 
 # Background
 
+Some text can go here
+
 ## Table 1
 
 ```{r}
-exyu
+dt2
 ```
 
 ## Graph 1
 
-```{r demo, fig.asp=.8, fig.width=10, fig.cap="The caption."}
+```{r demo, fig.asp=.8, fig.width=10, fig.cap="The caption 😃"}
 my_plot
 ```

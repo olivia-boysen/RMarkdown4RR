@@ -7,16 +7,16 @@ author:
     url: https://tanjakec.github.io
     affiliation: Sister Analyst
     affiliation_url: http://sisteranalyst.org/
-  - name: "Jelena Sapic, MA"  
-    url: http://www.bos.rs/sb/kontakt
-    affiliation: Belgrade Open School
-    affiliation_url: http://www.bos.rs/sb-eng/
+  - name: "Sivia Fierascu, Ph.D."  
+    url: https://www.linkedin.com/in/silviafierascu/
+    affiliation: West University of Timisoara
+    affiliation_url: https://www.uvt.ro/ro/
   - name: "Brian Cox, Ph.D."  
     url: https://www.physics.manchester.ac.uk/research/impact/the-brian-cox-effect/
     affiliation: School of Physics and Astronomy
     affiliation_url: https://www.manchester.ac.uk/
 creative_commons: CC BY
-date: "2020-01-30"
+date: "`r Sys.Date()`"
 output:   
   distill::distill_article:
     toc: true
@@ -100,9 +100,9 @@ exyu_mf
 
 ### 2: How do we plot this? 
 
-We need a bar chart with each team on the x axis and a number of male and female athlethes on the y axis.
+We need a bar chart with each team on the x axis and a number of male and female athlethes on the y axis (see figure\@ref(fig:demo)).
 
-```{r}
+```{r demo, fig.asp=.8, fig.width=10, fig.cap="The caption."}
 ggplot(data = exyu_mf, aes(x = Team, y = total, fill = Sex)) +
   geom_bar(stat="identity",  position="dodge", col = "black") +
   # to make it read easier flip x & y coordinates
@@ -119,6 +119,14 @@ ggplot(data = exyu_mf, aes(x = Team, y = total, fill = Sex)) +
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), 
         axis.line = element_blank())
+```
+## Adding a static imge is easy. 
+
+![RMarkdown Wizard](images/rmarkdown_wizards.png?width=40pc)
+
+
+```{r rockstar, out.width = "400px", fig.align = 'left', echo=FALSE}
+knitr::include_graphics("images/rmarkdown_rockstar.png")
 ```
 
 ## Acknowledgments {.appendix}

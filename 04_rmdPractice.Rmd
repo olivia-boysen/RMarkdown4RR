@@ -3,7 +3,7 @@ title: "RMarkdown Appreciation"
 author:
  - name: "Tatjana Kecojevic, Ph.D."
    affiliation: "1"
- - name: "Jelena Sapic, MA"
+ - name: "Sivia Fierascu, Ph.D"
    affiliation: "2"
  - name: "Brian Cox, Ph.D."
    affiliation: "3"
@@ -11,7 +11,7 @@ address:
  - code: "1"
    address: Sister Analysis, Belgrade, Serbia
  - code: "2"
-   address: Belgrade Open School, Masarikova 5, Belgrade, Serbia
+   address: West University of Timisoara, Timisoara, Romania
  - code: "3"
    address: University of Manchester, School of Physics and Astronomy, Oxford Road, Manchester, M13 9PL UK
 #bibliography: sample.bib
@@ -50,9 +50,9 @@ Title:  RMarkdown Appreciation
 
 Authors: Author One1, Author Two2, Author Three3
 
-Affiliations: 	1. Sister Analysis
-2. University of Belgrade, IFDT
-3. University of Belgrade, IFDT
+Affiliations: 1. Sister Analysis
+2. West University of Timisoara
+3. University of Manchester
 
 Corresponding Author:
 Author One,
