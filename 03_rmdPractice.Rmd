@@ -4,13 +4,13 @@ description: |
   Examples for doing RR in R
 author: 
   - name: "Tatjana Kecojevic, Ph.D."
-    url: https://tanjakec.github.io
+    url: https://tatjanakeco.rbind.io
     affiliation: Sister Analyst
     affiliation_url: http://sisteranalyst.org/
-  - name: "Sivia Fierascu, Ph.D."  
-    url: https://www.linkedin.com/in/silviafierascu/
-    affiliation: West University of Timisoara
-    affiliation_url: https://www.uvt.ro/ro/
+  - name: "Aleksandar Linc Djordjevic, MSc."  
+    url: https://www.linkedin.com/in/aleksandar-linc-djordjevic/
+    affiliation: Data Science Conference Europe
+    affiliation_url: https://www.datasciconference.com
   - name: "Brian Cox, Ph.D."  
     url: https://www.physics.manchester.ac.uk/research/impact/the-brian-cox-effect/
     affiliation: School of Physics and Astronomy

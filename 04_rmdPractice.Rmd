@@ -3,7 +3,7 @@ title: "RMarkdown Appreciation"
 author:
  - name: "Tatjana Kecojevic, Ph.D."
    affiliation: "1"
- - name: "Sivia Fierascu, Ph.D"
+ - name: "Aleksandar Linc Djordjevic, MSc."
    affiliation: "2"
  - name: "Brian Cox, Ph.D."
    affiliation: "3"
@@ -11,7 +11,7 @@ address:
  - code: "1"
    address: Sister Analysis, Belgrade, Serbia
  - code: "2"
-   address: West University of Timisoara, Timisoara, Romania
+   address: Data Science Conference Europe, Belgrade, Serbia
  - code: "3"
    address: University of Manchester, School of Physics and Astronomy, Oxford Road, Manchester, M13 9PL UK
 #bibliography: sample.bib
