@@ -1,6 +1,4 @@
-# Material for: [Reproducible Research in R](https://reproducibleresearchinr.netlify.com/)
-
-#### Delivered at <span style="color:#5E2A43">**Institute of Philosophy and Social Theory**</span> | **University of Beograde**
+# Material for: [Reproducible Research in R](https://https://reproducibleresearchinr.rbind.io)
 
 We have all experienced seeing others presenting their research as either a slideshow presentation, blog post, book or journal article. Looking at the figures and tables without being able to run computational experiments to probe the results presented, effectively limits the scope for understanding the magnitude of the available knowledge within scientific studies. Allowing others to replicate, test, reuse, extend and build on published research results can accelerate the rate at which scientific development drives cultural and technical innovation.  Adopting and applying open and transparent approaches to research is integral to genuinely rigorous analysis and adds to the material value of one’s research. In view of this, the presentation of the available code, data and algorithms should be available to scrutiny and possible connectivity to wider research projects.
 
