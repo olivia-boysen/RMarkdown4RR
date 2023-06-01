@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This is a short R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-Material from this bootcamp can be found on my [GitHub page](tps://github.com/TanjaKec).
+Material from today's workshop can be found on Tanja's [GitHub page](https://github.com/TanjaKec).
 
 When analysing data, a starting point is to examine the characteristics of each individual variable in the data set. The way to proceed depends upon the type of variable being examined. The variables can be one of two broad types:
 Attribute variable: has its outcomes described in terms of its characteristics or attributes; 
