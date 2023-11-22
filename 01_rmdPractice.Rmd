@@ -2,8 +2,8 @@
 title: 'RMarkdown Appreciation'
 date: "`r Sys.Date()`"
 author:
-- affiliation: Sister Analyst
-  name: Tatjana Kecojevic
+- affiliation: University of Manchester
+  name: Olivia Boysen
 output: 
   html_document:
     theme: "flatly"
