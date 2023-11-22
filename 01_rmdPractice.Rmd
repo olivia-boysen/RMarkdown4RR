@@ -3,7 +3,7 @@ title: 'RMarkdown Appreciation'
 date: "`r Sys.Date()`"
 author:
 - affiliation: University of Manchester
-  name: Olivia Boysen
+  name: Olivia Boysen Testing
 output: 
   html_document:
     theme: "flatly"
